@@ -14,7 +14,7 @@ int main(){
   for (i=0;i<1000;i++){  
     float delta_x=(2*drand48())-1;
     float delta_y=(2*drand48())-1;
-    float h=sqrt(delta_x*delta_x, delta_y*delta_y);
+    float h=sqrt((delta_x*delta_x) + (delta_y*delta_y));
     
     delta_x=delta_x/h;
     delta_y/h;
@@ -25,7 +25,6 @@ int main(){
     std::cout << x << " " <<y << std::endl;
     
     }
-  }
   
   return 0;
 }
