@@ -14,13 +14,13 @@ int main(){
   for (i=0;i<1000;i++){  
     float delta_x=(2*drand48())-1;
     float delta_y=(2*drand48())-1;
-    float h=sqrt(delta_x**2, delta_y**2);
+    float h=sqrt(delta_x*delta_x, delta_y*delta_y);
     
-    delta_x=delta_x/h
-    delta_y/h
+    delta_x=delta_x/h;
+    delta_y/h;
     
-    x=x+delta_x
-    y=y+delta_y
+    x=x+delta_x;
+    y=y+delta_y;
     
     std::cout << x << " " <<y << std::endl;
     
